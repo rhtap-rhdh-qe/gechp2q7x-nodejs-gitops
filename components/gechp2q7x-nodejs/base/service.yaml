@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: gechp2q7x-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: gechp2q7x-nodejs 
+  name: gechp2q7x-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: gechp2q7x-nodejs 
